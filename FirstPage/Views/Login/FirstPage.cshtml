@@ -1,0 +1,22 @@
+﻿@model FirstPage.Models.Mod
+@{
+    Layout = null;
+}
+<style>
+    h1 {
+        border: 1px solid #DDDDDD;
+        text-align: center;
+        padding: 8px;
+    }
+    </style>
+@using (Html.BeginForm("Index", "Login",FormMethod.Post))
+{
+
+        <h1>Welcome to the login Page</h1>
+        <label>UserName</label>
+        @Html.TextBoxFor(model => model.userName)
+        <Label>Password</Label>
+        @Html.PasswordFor(model => model.pass)
+
+        <button>Submit</button>
+}

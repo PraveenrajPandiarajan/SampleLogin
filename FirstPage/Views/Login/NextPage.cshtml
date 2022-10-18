@@ -1,0 +1,91 @@
+﻿@model FirstPage.Models.Mod
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NextPage</title>
+</head>
+<body> 
+     
+            <style>
+                table {
+                    font-family: arial, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                    color:brown;
+                }
+                td{
+                    color:chartreuse;
+                }
+
+                td, th {
+                    border: 1px solid #dddddd;
+                    text-align: center;
+                    padding: 8px;
+                }
+            </style>
+
+            <table>
+                <tr>
+                    <th colspan="8">Full MarkSheets</th>
+                    </tr>
+                <tr>
+                    <th colspan="2">Semester1 Marks</th>
+                    <th colspan="2">Semester2 Marks</th>
+                    <th colspan="2">Semester3 Marks</th>
+                    <th colspan="2">Semester4 Marks</th>
+                </tr>
+                <tr>
+                 
+                    <th><b>Subjects</b></th>
+                    <th><b>Marks</b></th>
+                    <th><b>Subjects</b></th>
+                    <th><b>Marks</b></th>
+                    <th><b>Subjects</b></th>
+                    <th><b>Marks</b></th>
+                    <th><b>Subjects</b></th>
+                    <th><b>Marks</b></th>
+                    </tr>
+
+<tr>
+                    <td>c</td>
+                    <td>@Model.c</td>
+                    <td>Java</td>
+                    <td>@Model.Java</td>
+                    <td>Differential</td>
+                    <td>@Model.Differential</td>
+                    <td>OperationalResearch</td>
+                    <td>@Model.OperationResearch</td>
+                </tr>
+                <tr>
+                    <td>Matrics</td>
+                    <td>@Model.Matrics</td>
+                    <td>AdvancedAlgebra</td>
+                    <td>@Model.AdvancedAlgebra</td>
+                    <td>Html</td>
+                    <td>@Model.Html</td>
+                    <td>Python</td>
+                    <td>@Model.Python</td>
+                </tr>
+                <tr>
+                    <td>Trignometry</td>
+                    <td>@Model.Trignometry</td>
+                    <td>Algebra</td>
+                    <td>@Model.Algebra</td>
+                    <td>Integral</td>
+                    <td>@Model.Integral</td>
+                    <td>Vertices</td>
+                    <td>@Model.Vertices</td>
+                </tr>
+             
+
+            </table>
+       
+</body>
+</html>
